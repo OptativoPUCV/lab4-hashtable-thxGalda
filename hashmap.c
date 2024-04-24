@@ -70,6 +70,7 @@ void enlarge(HashMap * map)
   map->capacity = newCapacity;
   Pair** newArray = (Pair**)malloc(newCapacity * sizeof(Pair**));
   map->size = 0;
+  map->buckets = newArray;
 
   for (int i = 0; i < newCapacity; i++)
     {

@@ -9,3 +9,8 @@ hashmap.c:71:10: error: unused variable ‘newArray’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 50feaef
+Wed 24 Apr 2024 05:56:54 PM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|0
+8c9474f
