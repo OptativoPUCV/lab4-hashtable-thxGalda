@@ -71,3 +71,14 @@ Wed 24 Apr 2024 06:20:47 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 7e4bf0c
+Wed 24 Apr 2024 06:21:03 PM UTC: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:119:1: error: control reaches end of non-void function [-Werror=return-type]
+  119 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e7b9190
