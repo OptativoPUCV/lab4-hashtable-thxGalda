@@ -68,7 +68,6 @@ void enlarge(HashMap * map)
   int oldCapacity = map->capacity;
   int newCapacity = map->capacity *2;
   Pair** newArray = (Pair**)malloc(newCapacity * sizeof(Pair**));
-  map->size = 0;
 
   for (int i = 0; i < newCapacity; i++)
     {
