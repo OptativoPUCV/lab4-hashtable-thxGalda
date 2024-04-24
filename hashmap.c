@@ -57,9 +57,9 @@ void insertMap(HashMap * map, char * key, void * value)
   }
   int pos = get_valid_location(map, key);
 
-  map->buckets[pos]->key = key;
+  map->buckets[pos]->key = strdup(key);
   map->buckets[pos]->value = value;
-  
+  map->size++;
 }
 
 void enlarge(HashMap * map) 
