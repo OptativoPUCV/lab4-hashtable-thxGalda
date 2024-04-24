@@ -112,7 +112,7 @@ void eraseMap(HashMap * map,  char * key)
 
 Pair * searchMap(HashMap * map,  char * key) 
 {   
-  int pos = get_valid_location(map, key)
+  int pos = get_valid_location(map, key);
   if (map->buckets[pos]->key == key){
     return map->buckets[pos];
   }
