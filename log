@@ -82,3 +82,22 @@ hashmap.c:119:1: error: control reaches end of non-void function [-Werror=return
 cc1: all warnings being treated as errors
 Compilation failed
 e7b9190
+Wed 24 Apr 2024 06:21:19 PM UTC: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:119:3: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+  119 |   else;
+      |   ^~~~
+hashmap.c:120:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+  120 |     return NULL;
+      |     ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+adc6430
+Wed 24 Apr 2024 06:21:27 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+adc6430
