@@ -140,3 +140,14 @@ Thu 25 Apr 2024 02:59:42 AM UTC:
  tests:  6|3
 total_score: 40/70
 040d68a
+Thu 25 Apr 2024 03:09:29 AM UTC: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:109:7: error: unused variable ‘pos’ [-Werror=unused-variable]
+  109 |   int pos = get_valid_location(map, key);
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d933fd0
