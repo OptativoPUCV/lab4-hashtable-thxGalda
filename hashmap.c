@@ -106,9 +106,17 @@ HashMap * createMap(long capacity)
 
 void eraseMap(HashMap * map,  char * key) 
 {    
-  //int pos = get_valid_location(map, key);
-  
+  int pos = hash(key, map->capacity);
+  while (map->buckets[pos] != NULL)
+  {
+    if (strcmp(map->buckets[pos]->key , key) == 0){
+      map->buckets[pos]->value = NULL; 
+      map->current = pos;
+      map->size--;
 
+    }
+    pos = (pos + 1) % map->capacity;
+  }
 }
 
 Pair * searchMap(HashMap * map,  char * key) 
