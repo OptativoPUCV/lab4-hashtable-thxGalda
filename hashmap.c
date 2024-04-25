@@ -115,7 +115,6 @@ Pair * searchMap(HashMap * map,  char * key)
 {   
   int pos = hash(key, map->capacity);
   if (map->buckets[pos] != NULL && strcmp(map->buckets[pos]->key, key) == 0){
-    map->current = pos;
     return map->buckets[pos];
   }
   else
