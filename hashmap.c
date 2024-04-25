@@ -111,12 +111,14 @@ void eraseMap(HashMap * map,  char * key)
   while (map->buckets[pos] != NULL)
   {
     if (is_equal(map->buckets[pos]->key, key))
-    if (strcmp(map->buckets[pos]->key , key) == 0){
+    {
       map->buckets[pos] = NULL;
       map->size--;
+      return;
     }
     pos = (pos + 1) % map->capacity;
   }
+  
 }
 
 Pair * searchMap(HashMap * map,  char * key) 
