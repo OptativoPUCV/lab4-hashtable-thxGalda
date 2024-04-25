@@ -106,7 +106,7 @@ HashMap * createMap(long capacity)
 
 void eraseMap(HashMap * map,  char * key) 
 {    
-  int pos = hash(key, map->capacity);
+  int pos = get_valid_location(map, key);
   
   while (map->buckets[pos] != NULL)
   {
