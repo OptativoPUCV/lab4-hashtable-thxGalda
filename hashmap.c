@@ -114,11 +114,9 @@ void eraseMap(HashMap * map,  char * key)
     {
       map->buckets[pos] = NULL;
       map->size--;
-      return;
     }
     pos = (pos + 1) % map->capacity;
   }
-  
 }
 
 Pair * searchMap(HashMap * map,  char * key) 
