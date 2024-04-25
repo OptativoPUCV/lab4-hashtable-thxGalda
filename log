@@ -241,3 +241,14 @@ Thu 25 Apr 2024 03:32:34 AM UTC:
  tests:  9|2
 total_score: 50/70
 e03c21b
+Thu 25 Apr 2024 03:33:14 AM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘eraseMap’:
+hashmap.c:115:30: error: statement with no effect [-Werror=unused-value]
+  115 |       map->buckets[pos]->key == NULL;
+      |                              ^
+cc1: all warnings being treated as errors
+Compilation failed
+44dbb5c
