@@ -146,10 +146,11 @@ Pair * firstMap(HashMap * map)
         return map->buckets[i];
       }
     }
-  return map->buckets[map->current];
+  return NULL;
 }
 
-Pair * nextMap(HashMap * map) {
-
+Pair * nextMap(HashMap * map) 
+{
+  
     return NULL;
 }
