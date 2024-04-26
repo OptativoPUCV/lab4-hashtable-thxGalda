@@ -143,6 +143,7 @@ Pair * firstMap(HashMap * map)
       if (map->buckets[i] != NULL)
       {
         map->current = i;
+        break;
       }
     }
   return map->buckets[map->current];
