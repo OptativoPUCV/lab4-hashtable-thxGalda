@@ -384,3 +384,9 @@ hashmap.c:143:57: error: comparison with string literal results in unspecified b
 cc1: all warnings being treated as errors
 Compilation failed
 abceb44
+Sat 27 Apr 2024 10:29:59 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|1
+total_score: 60/70
+77a7018
