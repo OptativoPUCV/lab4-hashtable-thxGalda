@@ -373,3 +373,14 @@ Sat 27 Apr 2024 02:16:58 AM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 f2fef55
+Sat 27 Apr 2024 10:26:52 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:143:57: error: comparison with string literal results in unspecified behavior [-Werror=address]
+  143 |     if (map->buckets[i] != NULL && map->buckets[i]->key != "NULL")
+      |                                                         ^~
+cc1: all warnings being treated as errors
+Compilation failed
+abceb44
