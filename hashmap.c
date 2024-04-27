@@ -151,12 +151,12 @@ Pair * firstMap(HashMap * map)
 
 Pair * nextMap(HashMap * map) 
 {
-  map->current++;
-  for(long i = map->current; i < map->capacity; i++)
+  for(long i = map->current + 1; i < map->capacity; i++)
     {
       if (map->buckets[map->current] != NULL)
       {
-        return map->buckets[map->current];
+        map->current = i;
+        return map->buckets[i];
       }
     }
     return NULL;
