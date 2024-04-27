@@ -402,3 +402,13 @@ Sat 27 Apr 2024 10:40:09 PM UTC:
  tests:  14|1
 total_score: 60/70
 ec71bc1
+Sat 27 Apr 2024 10:41:04 PM UTC: 
+ hashmap.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:157:89: error: expected statement before ‘)’ token
+  157 |       if (map->buckets[map->current] != NULL && map->buckets[map->current]->key != NULL))
+      |                                                                                         ^
+Compilation failed
+bc2f5c2
