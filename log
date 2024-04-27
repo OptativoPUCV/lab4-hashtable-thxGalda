@@ -396,3 +396,9 @@ Sat 27 Apr 2024 10:30:46 PM UTC:
  tests:  13|1
 total_score: 60/70
 c703cdc
+Sat 27 Apr 2024 10:40:09 PM UTC: 
+ hashmap.c | 16 ++--------------
+ 1 file changed, 2 insertions(+), 14 deletions(-)
+ tests:  14|1
+total_score: 60/70
+ec71bc1
